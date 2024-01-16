@@ -1,0 +1,81 @@
+.FormElect {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-grey-200);
+    height: 100vh;
+    position: relative;
+}
+.FormElect__NavBarLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; 
+  top: 50px;
+
+  img {
+    height: 70px;
+    width: 70px;
+
+    @media screen and (max-width: "512px") {
+        height: 50px;
+        width: 50px;  
+    }
+  }
+  h1 {
+    color:var(--color-primary); 
+    font-size: 70px;
+    font-family: Acme;
+
+    @media screen and (max-width: "512px") {
+        font-size: 50px; 
+    }
+  }
+}
+
+.FormElectContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 2em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 5em;
+
+  @media screen and (max-width: "512px") {
+    padding: 1em;
+}
+
+  .FormElectContentTitle {
+    color: var(--input-color);
+    font-size: 30px;
+    font-family: Acme;
+    margin-bottom: 1em;
+}
+}
+
+.FormElectContent__input {
+    margin-bottom: 2em;
+
+    b {
+       font-family: Acme;
+       color: var(--input-color);
+    }
+    div {
+       width: 300px; 
+       height: 55px;
+
+       @media screen and (max-width: "512px") {
+        width: 250px;  
+    }
+       @media screen and (max-width: "300px") {
+        width: 200px;  
+    }
+    }
+}

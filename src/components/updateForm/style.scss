@@ -1,0 +1,27 @@
+.modal__form__input {
+    textarea , input{
+       width: 100%;
+       font-size: 18px;
+       color: black;
+       outline: none;
+       border: none;
+       overflow: auto;
+       resize: vertical;
+       border-bottom: 2px solid var(--bg-grey-200);
+    }
+
+    input {
+        height: 10%;
+        margin-bottom: 1em;
+    }
+    textarea {
+        height: 100px;
+        margin-bottom: 1em;
+    }
+    .modal__form__img {
+        h3 {
+            margin-bottom: 1em;
+        }
+    }
+  
+}

@@ -1,0 +1,164 @@
+.profile__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bg-grey-100);
+    margin-top: 2em;
+    overflow-x: hidden;
+    min-height: 85vh;
+    @media screen and (max-width: 950px) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 550px) {
+        padding:0 1.5em;
+        padding-bottom: 2em;
+    }
+
+    .profile__card {
+        background-color: white;
+        position: relative;
+        height: 250px;
+        width: 400px;
+        box-shadow: var(--box-shadow);
+
+        @media screen and (max-width: 950px) {
+            margin-bottom: 2em;
+        }
+
+        @media screen and (max-width: 550px) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            margin: 2em;
+        }
+
+        .profile__card__wallpapaer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 80px;
+            background-color: var(--bg-grey-200);
+        }
+        .profile__card__logo {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            height: 100px;
+            width: 100px;
+            background-color: var(--bg-grey-300);
+            border-radius: 50%;
+            box-shadow: 1px 1px 10px grey;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+            }
+            @media screen and (max-width: 550px) {
+                top: 40px;
+                left: 40px;
+                height: 85px;
+                width: 85px;
+                left: 40%;
+            }
+        }
+        .profile__card__details {
+            position: absolute;
+            top: 40%;
+            right: 30px;
+
+            @media screen and (max-width: 550px) {
+                top: 200px;
+                left: 20px;
+            }
+        }
+        .profile__card__upload {
+            position: absolute;
+            bottom: 60px;
+            left: 45px;
+
+             @media screen and (max-width: 550px) {
+                top: 150px;
+                left: 40%;
+            }
+        }
+        .profile__card__delete {
+            position: absolute;
+            bottom: 10px;
+            right: 50px;
+           
+        }
+
+    }
+    div {
+        // margin-bottom: 2em;
+        .profile__card__form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            margin-bottom: 1em;
+    
+            @media screen and (max-width: 550px) {
+                width: 100%;
+            }
+    
+    
+            div {
+                @media screen and (max-width: 550px) {
+                    width: 100%;
+                }
+                .profile__card__form__input__label {
+                    margin:0.5em 1em;
+                    font-family: Acme;
+                }
+                input {
+                    background: white;
+                    outline: none;
+                    border: none;
+                    line-height: 1;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    color: #333;
+                    height: 55px;
+                    border-radius: 55px;
+                    padding: 0 1rem;
+                    @media screen and (max-width: 550px) {
+                        width: 450px;
+                    }
+                    @media screen and (max-width: 500px) {
+                        width: 350px;
+                    }
+                    @media screen and (max-width: 400px) {
+                        max-width: 300px;
+                    }
+                    @media screen and (max-width: 350px) {
+                        max-width: 200px;
+                    }
+                    @media screen and (max-width: 250px) {
+                        max-width: 150px;
+                    }
+                    
+                }
+            }
+    
+            @media screen and (max-width: 550px) {
+                grid-template-columns: 1fr;
+            }
+        }
+        .profile__card__form__button {
+            width: 100%;
+        }
+    }
+    .profile__card__upload {
+        width: 400px;
+        @media screen and (max-width: 550px) {
+            width: 100%;
+        }
+    }
+
+}

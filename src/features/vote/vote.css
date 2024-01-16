@@ -1,0 +1,136 @@
+/* .vote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+} */
+
+/*VOTING*/
+
+.voting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+.ballot-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-bottom: 2em;
+  background-color: var(--bg-grey-200);
+  border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -ms-border-radius: 0px 0px 10px 10px;
+  -o-border-radius: 0px 0px 10px 10px;
+}
+.ballot-header {
+  width: 80%;
+  padding: 1em;
+  text-align: center;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 15px 15px 0px 0px;
+  font-family: Acme;
+  font-size: 1.3em;
+}
+.voting-inst {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.voting-inst b {
+  margin-bottom: 0.5em;
+  font-family: Acme;
+  color: rgb(238, 106, 106);
+}
+.voting-inst p {
+  padding: 1em;
+  width: fit-content;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 0.9em;
+}
+.option-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.option-single {
+  background-color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.option-single-section1 {
+  display: flex;
+  align-items: center;
+  font-family: Acme;
+  font-size: 1.2em;
+}
+.option-single-section1-logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 1em;
+  border: 1px solid var(--bg-grey-300);
+}
+.option-single-section2 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--bg-grey-300);
+  border: 1px solid grey;
+}
+.option-single-section2-tick {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.voting-button {
+  margin-bottom: 1em;
+  width: 80%;
+}
+.voting-button button {
+  background-color: var(--color-primary);
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-family: Acme;
+}
+@media (max-width: 768px) {
+  .ballot-wrap {
+    width: 100%;
+  }
+  .ballot-header {
+    width: 100%;
+  }
+  .option-single-section1-logo {
+    width: 70px;
+    height: 70px;
+  }
+  .voting-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,121 @@
+/* ELECTION  WRAPPER */
+.ElectionWrapper {
+  display: flex;
+  flex-direction: column;
+}
+/* #d8d5d5 */
+
+/*  SIDE BAR WRAPPER */
+.ElectionSidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/*  MAIN BAR WRAPPER */
+.ElectionMainBar {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+.ElectionMainBarHeaderWrapper {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 1px 1px 10px var(--bg-secondary);
+  z-index: 10;
+}
+.ElectionMainBarHeader {
+  background-color: white;
+  border-bottom: 1px solid var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  height: 50px;
+  width: 100%;
+}
+.ElectionName {
+  background-color: var(--bg-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+@media (min-width: 0px) {
+}
+@media (min-width: 570px) {
+}
+@media (min-width: 768px) {
+  .ElectionWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .ElectionSidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+    z-index: 100;
+    box-shadow: 1px 1px 10px grey;
+    width: 20%;
+  }
+  .ElectionSideBarListWrapper {
+    margin-top: 1em;
+    padding: 1em;
+  }
+  .ElectionSideBarList {
+    display: flex;
+    align-content: center;
+    margin-bottom: 1em;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    padding: 0.5em;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .ElectionSideBarList:hover {
+    background-color: var(--color-primary);
+    color: white;
+  }
+  .ElectionSideBarList p {
+    margin: 0.2em 0 0.5em 0.5em;
+  }
+  .ElectionMainBar {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+@media (min-width: 1024px) {
+  /*.ElectionSidebar {
+    width: 15vw;
+  }
+  .ElectionMainBar {
+   width: 80%;
+  }
+*/
+}
+
+@media (min-width: 1280px) {
+}
+@media (min-width: 1536px) {
+}

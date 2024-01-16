@@ -1,0 +1,117 @@
+.dropdowm {
+  position: relative;
+  min-width: 100%;
+  /* margin: 2em; */
+}
+.dropdown * {
+  box-sizing: border-box;
+}
+.select {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -ms-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  border: 2px var(--bg-secondary) solid;
+}
+.selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selected p {
+  margin-left: 0.5em;
+}
+/* click style */
+.select-clicked {
+  color: var(--color-primary);
+  border: 2px var(--color-primary) solid;
+  box-shadow: 0 0 0.8em var(--bg-secondary);
+}
+.select:hover {
+  border: 1px solid var(--color-primary);
+}
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #323741;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+/* click rotate styles */
+.caret-rotate {
+  border-top: 8px solid var(--color-primary);
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.menu {
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background: white;
+  border: 1px var(--bg-secondary) solid;
+  box-shadow: 0 0.5em 1em var(--bg-secondary);
+  color: #323741;
+  position: absolute;
+  top: 4em;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  z-index: 1;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+.menu li {
+  padding: 0.7em 0.5em;
+  margin: 0.3em 0;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  cursor: pointer;
+}
+.menu:hover {
+  background: aliceblue;
+}
+.dropdown-active {
+  color: var(--color-primary);
+}
+.menu-open {
+  display: block;
+  opacity: 1;
+}
+.dropdown-list {
+  display: flex;
+  align-items: center;
+}
+.dropdown-list li {
+  margin-left: 0.5em;
+}

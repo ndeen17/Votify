@@ -1,0 +1,95 @@
+.settings__email__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.settings__email {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--bg-grey-300);
+    margin-bottom: 1.5em;
+    background-color: white;
+
+    .settings__email__header {
+        border-bottom: 1px solid var(--bg-grey-300);
+        display: flex;
+        align-items: center;
+    }
+    .settings__email__info {
+        background-color: rgb(193, 193, 255);
+        display: flex;
+        align-items: center;
+        margin: 1em;
+        border-radius:10px ;
+        -webkit-border-radius:10px ;
+        -moz-border-radius:10px ;
+        -ms-border-radius:10px ;
+        -o-border-radius:10px ;
+}
+
+    .settings__email__form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+
+        .settings__email__form__input {
+            width: 100%;
+            margin-bottom: 1.3em;
+            p {
+                margin-bottom: 0.2em;
+                font-size: 1.1em;
+                font-weight: 600;
+            }
+            .settings__email__form__input__input {
+                width: 100%;
+                height: 40px;
+                font-size: 1.2em;
+                border: 1px solid var(--bg-grey-300);
+                outline: none;
+                padding: 1em;
+            }
+            .settings__email__form__input__body {
+                width: 100%;
+                height: 200px;
+                font-size: 1.2em;
+                border: 1px solid var(--bg-grey-300);
+                outline: none;
+                padding: 1em;
+            }
+        }
+        .settings__email__form__submit {
+            width: 120px;
+            height: 50px;
+
+            button {
+                width: 100%;
+                height: 100%;
+            }
+    }
+    }
+}
+
+.settings__email__header__logo {
+    font-size: 1.5em;
+    margin: 1em 1em 0.5em 1em;
+}
+
+.settings__email__header__name {
+  font-size: 18px;
+  font-family: Acme;
+}
+
+.settings__email__info__logo {
+    margin: 1em 1em 0.5em 1em;
+    color: white;
+    font-size: 1.5em;
+}
+
+.settings__email__info__name {
+  font-size: 18px;
+  color: white;
+}

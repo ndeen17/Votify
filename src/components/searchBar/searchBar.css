@@ -1,0 +1,27 @@
+.SearchBar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border: 1px solid var(--input-color);
+  box-shadow: 1px 1px 10px var(--input-color);
+}
+.SearchBar input {
+  background: white;
+  padding: 0.5em;
+  outline: none;
+  border: none;
+  font-size: var(--input-size);
+  width: 100%;
+  border-right: 1px solid var(--input-color);
+}
+.SearchBar span {
+  padding: 0.5em;
+  height: var(--input-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchBarIcon {
+  color: var(--input-color);
+}

@@ -1,0 +1,96 @@
+.settings__general__cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .settings__general {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--bg-grey-300);
+
+        .settings__general__header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--bg-grey-300);
+            height: 45px;
+            background-color: white;
+            padding: 1em;
+
+            .settings__general__header__logo {
+                margin-right: 1em;
+                font-family: Acme;
+                font-size: 1.3em;
+            }
+            .settings__general__header__text {
+                font-family: Acme;
+                font-size: 1.3em;
+            }
+        }
+        .settings__general__form {
+            padding: 1em;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .settings__general__form__input  {
+                width: 100%;
+                p {
+                    margin-bottom: 0.2em;
+                    font-size: 1.1em;
+                    font-weight: 600;
+                }
+                input {
+                    width: 100%;
+                    height: 40px;
+                    font-size: 1.2em;
+                    border: 1px solid var(--bg-grey-300);
+                    outline: none;
+                    padding: 1em;
+                }
+            }
+            .settings__general__form__textarea  {
+                width: 100%;
+
+                p {
+                    margin-bottom: 0.2em;
+                    font-size: 1.1em;
+                    font-weight: 600;
+                }
+                textarea {
+                    width: 100%;
+                    height: 200px;
+                    font-size: 1.2em;
+                    border: 1px solid var(--bg-grey-300);
+                    outline: none;
+                    padding: 1em;
+                    margin-bottom: 1.5em;
+                }
+            }
+            .settings__general__form__date {
+                width: 100%;
+
+                p {
+                    margin-bottom: 0.2em;
+                    font-size: 1.1em;
+                    font-weight: 600;
+                }
+                div {
+                    width: 300px;
+                    height: 50px;
+                } 
+            }
+            .settings__general__form__submit {
+                width: 120px;
+                height: 50px;
+
+                button {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

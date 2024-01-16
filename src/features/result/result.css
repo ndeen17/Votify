@@ -1,0 +1,69 @@
+.result {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+.result-ballot-wrap {
+  margin-bottom: 2em;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .result-ballot-wrap {
+    width: 100%;
+  }
+}
+.result-ballot-header {
+  background-color: var(--color-primary);
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+  font-family: Acme;
+  color: white;
+}
+.result-ballot-option-wrap {
+  padding: 1.5em 1.5em 0 1.5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-grey-200);
+}
+.result-ballot-option-single {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-family: Acme;
+}
+
+.result-ballot-option-id__logo {
+  border: 1px solid var(--bg-grey-300);
+  width: 100px;
+  height: 100px;
+  margin-right: 2em;
+}
+@media screen and (max-width: 768px) {
+  .result-ballot-option-id__logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 1em;
+  }
+}
+.result-ballot-option-id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

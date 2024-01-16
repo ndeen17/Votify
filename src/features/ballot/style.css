@@ -1,0 +1,201 @@
+/*Ballot Wrapper*/
+.ballotWrapper {
+  background: var(--bg-grey-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*Ballot Header*/
+.BallotHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  padding: 0.5em;
+}
+.BallotHeaderMenu {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+.BallotHeaderMenu p {
+  margin-left: 0.5em;
+}
+/*Ballot Content*/
+.BallotContent {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  min-height: 150px;
+  background-color: white;
+  margin-top: 1em;
+  box-shadow: 1px 1px 10px var(--bg-grey-300);
+  margin-bottom: 1em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.BallotContentHeader {
+  background-color: var(--bg-grey-300);
+  height: 100px;
+  position: relative;
+}
+.BallotContentTitleWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.EditMenu {
+  position: relative;
+  border: 1px solid red;
+}
+.BallotContentTitle {
+  width: fit-content;
+  font-family: Acme;
+}
+.BallotContentRoute1 {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 100px;
+  height: 35px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+}
+.BallotContentRoute1 p {
+  margin-left: 5px;
+  font-family: Acme;
+}
+/* .BallotContentRoute2 {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 35px;
+  left: 123px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+  margin-left: 3px;
+} */
+.BallotContentRoute2 p {
+  margin-left: 5px;
+}
+.BallotContentOptions {
+  margin: 0 auto;
+  width: 90%;
+  min-height: 30px;
+  border: 1px solid var(--bg-grey-300);
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+.BallotContentOptionsButton {
+  margin: 1em;
+}
+/*Edit Ballot*/
+.EditForm {
+  background-color: white;
+}
+.EditFormTitle {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  background-color: var(--color-primary);
+  color: white;
+}
+.ballot__option__profile__tooltip {
+  width: 120px;
+  padding: 0.5em;
+}
+.ballot__option__profile__tooltip:hover {
+  background-color: white;
+  color: grey;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+@media (min-width: 1200px) {
+  .BallotContent {
+    width: 800px;
+    min-height: 150px;
+    margin-top: 1em;
+  }
+  .BallotContentHeader {
+    position: relative;
+  }
+  .BallotContentTitleWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+  }
+}
+
+.optionTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.optionTitle img {
+  width: 150px;
+  height: 150px;
+  margin-right: 1.5em;
+  border: 1px solid var(--bg-grey-300);
+}
+.optionTitle__no_avatar {
+  width: 150px;
+  height: 150px;
+  margin-right: 1.5em;
+  background-color: var(--bg-grey-300);
+}
+.optionTitle p {
+  font-family: Acme;
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 512px) {
+  .optionTitle img {
+    width: 130px;
+    height: 130px;
+    margin-right: 1em;
+  }
+  .optionTitle__no_avatar {
+    width: 130px;
+    height: 130px;
+    margin-right: 1em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .optionTitle img {
+    width: 100px;
+    height: 100px;
+    margin-right: 0.5em;
+  }
+  .optionTitle__no_avatar {
+    width: 100px;
+    height: 100px;
+    margin-right: 0.5em;
+  }
+}

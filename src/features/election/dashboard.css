@@ -1,0 +1,213 @@
+.ElectionDashboardWrapper {
+  max-width: 100vw;
+  background-color: var(--bg-grey-200);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: rgb(70, 70, 70);
+}
+.ElectionDashboardHeader {
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 55px;
+}
+.ElectionDashboardContentHeader {
+  background-color: white;
+  width: 100%;
+  height: 105px;
+  margin-bottom: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+.ElectionDashboardContentHeader b {
+  font-family: Acme;
+  color: var(--input-color);
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 512px) {
+  .ElectionDashboardContentHeader b {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .ElectionDashboardContentHeader b {
+    font-size: 1em;
+  }
+}
+
+.ElectionDashboardContentHeaderSide {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--input-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 0.3em 1em;
+}
+
+.ElectionDashboardContentHeaderSideIcon {
+  font-size: 2em;
+  color: white;
+}
+.ElectionDashboardContentHeaderSideIconData {
+  padding: 0.5em;
+  color: white;
+}
+.ElectionDashboardContentHeaderSideIconData:hover {
+  background-color: white;
+  color: var(--color-primary);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.ElectionDashboardContentHeaderLogo {
+  margin-right: 0.5em;
+}
+.ElectionDashboardContent {
+  width: 80%;
+  margin: 0 auto;
+}
+.ElectionDashboardContent p {
+  margin-bottom: 1em;
+}
+.ElectionDashboardContentInput {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+
+.ElectionDashboardContentInput1 {
+  width: 40%;
+}
+
+.ElectionDashboardContentInput2 {
+  width: 30%;
+  height: 45px;
+  position: relative;
+}
+.ElectionDashboardContentInput2 select {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--input-color);
+  box-shadow: 1px 1px 10px var(--input-color);
+  padding: 0em 0.5em;
+  font-family: Acme;
+  font-size: 1em;
+}
+
+.ElectionDashboardContentElection {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1em 1.5em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+
+.ElectionDashboardContentElectionDiv--modifier1 {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.ElectionDashboardContentElectionDiv--modifier1 div {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: var(--bg-grey-200);
+  padding: 0.3em;
+}
+
+.ElectionDashboardContentElectionDiv--modifier2 {
+  display: flex;
+  flex-direction: row;
+}
+.ElectionDashboardContentElectionDiv--modifier2 div {
+  width: fit-content;
+}
+
+.ElectionDashboardContentElectionDiv--modifier2__1 {
+  margin-right: 2em;
+}
+
+.ElectionDashboardContentElection div > span {
+  margin-top: 0.5em;
+  padding: 0.1em;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  .ElectionDashboardContentElectionDiv--modifier1 {
+    margin-bottom: 1em;
+  }
+  .ElectionDashboardContentElection {
+    flex-direction: column;
+  }
+
+  .ElectionDashboardContentElectionDiv--modifier1 {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ElectionDashboardContentElectionDiv--modifier2 {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .ElectionDashboardContentHeaderSide {
+    padding: 0.3em 0.5em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .ElectionDashboardContentHeaderSide {
+    padding: 0.1em 0.3em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ElectionDashboardContentInput {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+
+  .ElectionDashboardContentInput1 {
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+  .ElectionDashboardContentInput2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .ElectionDashboardContentElectionDiv--modifier2 {
+    flex-direction: column;
+  }
+  .ElectionDashboardContentElectionDiv--modifier2__1 {
+    margin-right: 0;
+  }
+}

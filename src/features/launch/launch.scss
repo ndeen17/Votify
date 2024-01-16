@@ -1,0 +1,46 @@
+.LaunchWrapper1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 82vh;
+    flex-direction: column;
+    
+    img {
+        width: 300px;
+        height: 350px;
+        margin-bottom: 10rem;
+
+        @media screen and (max-width: 512px) {
+            width: 200px;
+            height: 250px;
+        }
+    }
+
+    button {
+        width: 250px;
+        height: 50px;
+        background-color: red;
+        font-family: Acme;
+        font-size: 1.2rem;
+
+        @media screen and (max-width: 360px) {
+            width: 180px;
+            height: 50px;
+        }
+    }
+    .launchLoader {
+        width: 250px;
+        height: 50px;
+        background-color: red;
+        font-family: Acme;
+        font-size: 1.2rem;
+        border-radius: 15px;
+    
+
+        @media screen and (max-width: 360px) {
+            width: 180px;
+            height: 50px;
+        }
+    }
+}

@@ -1,0 +1,172 @@
+.addVotersIntro {
+  background-color: var(--bg-grey-200);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 82vh;
+}
+.addVotersIntroDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addVotersIntroSpace {
+  margin: 15px;
+  font-size: 80px;
+}
+.addVotersIntroP {
+  font-size: 60px;
+  font-family: Acme;
+}
+.addVotersIntroPp {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.addVotersIntroButton button {
+  width: 200px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addVotersIntroButtonIcon {
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 512px) {
+  .addVotersIntroSpace {
+    font-size: 60px;
+  }
+  .addVotersIntroP {
+    font-size: 40px;
+  }
+  .addVotersIntroPp {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .addVotersIntroSpace {
+    font-size: 35px;
+  }
+  .addVotersIntroP {
+    font-size: 25px;
+  }
+  .addVotersIntroPp {
+    font-size: 20px;
+  }
+}
+
+.addVotersHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  background-color: var(--bg-grey-200);
+  min-height: 82vh;
+}
+.addVotersSearch {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  margin-bottom: 3em;
+  background-color: white;
+  height: 55px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .addVotersSearch {
+    width: 100%;
+  }
+}
+
+.addVotersSearch input {
+  background: white;
+  padding: 0.5em;
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  font-family: Acme;
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 768px) {
+  .addVotersSearch input {
+    font-size: 1em;
+  }
+}
+
+.addVotersSearch span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.5em;
+  padding: 1em;
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px) {
+  .addVotersSearch span {
+    padding: 0.5em;
+  }
+}
+
+.addVotersListWrapper {
+  width: 100%;
+  background-color: white;
+}
+.addVotersListWrapper p {
+  font-size: 0.7em;
+}
+.addVotersListHeader {
+  height: 55px;
+  width: 100%;
+  padding: 0.5em;
+  background-color: var(--color-primary);
+  border-radius: 15px 15px 0px 0px;
+  -webkit-border-radius: 15px 15px 0px 0px;
+  -moz-border-radius: 15px 15px 0px 0px;
+  -ms-border-radius: 15px 15px 0px 0px;
+  -o-border-radius: 15px 15px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  color: white;
+  font-family: Acme;
+}
+
+.addVotersListHeader b {
+  font-family: Acme;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 512px) {
+  .addVotersListHeader b {
+    font-size: 0.9em;
+  }
+}
+
+.addVotersList {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .addVotersList {
+    overflow-x: scroll;
+  }
+  .addVotersList p {
+    padding-right: 2.5em;
+  }
+}
