@@ -70,7 +70,7 @@ export default function Navbar() {
       </div>
       <div className="NavBarRoute">
         {location.pathname === "/" && (
-          <a href="https://www.youtube.com/watch?v=k7kbAyOHRdE&t=169s&pp=ygURaG93IHRvIHVzZSB2b3RpZnk%3D">
+          <a href="https://drive.google.com/file/d/1vnT7baAHM85EyIsOSmJG5L2y8ldCmj3m/view?usp=drivesdk">
             <button className="button">How it Works</button>
           </a>
         )}
